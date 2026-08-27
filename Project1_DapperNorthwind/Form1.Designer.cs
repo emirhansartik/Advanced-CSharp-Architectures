@@ -128,6 +128,7 @@
             this.btnCategoryDelete.TabIndex = 9;
             this.btnCategoryDelete.Text = "Kategori Sil";
             this.btnCategoryDelete.UseVisualStyleBackColor = true;
+            this.btnCategoryDelete.Click += new System.EventHandler(this.btnCategoryDelete_Click);
             // 
             // btnCategoryUpdate
             // 
@@ -137,6 +138,7 @@
             this.btnCategoryUpdate.TabIndex = 10;
             this.btnCategoryUpdate.Text = "Kategori Güncelle";
             this.btnCategoryUpdate.UseVisualStyleBackColor = true;
+            this.btnCategoryUpdate.Click += new System.EventHandler(this.btnCategoryUpdate_Click);
             // 
             // Form1
             // 

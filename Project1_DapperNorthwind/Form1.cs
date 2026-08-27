@@ -38,6 +38,25 @@ namespace Project1_DapperNorthwind
             await connection.ExecuteAsync(query, parameteres);
         }
 
-       
+        private async void btnCategoryDelete_Click(object sender, EventArgs e)
+        {
+            string query = "Delete From Categories Where CategoryId=@categoryId";
+            var parameteres = new DynamicParameters();
+            parameteres.Add("@categoryId", txtCategoryId.Text);
+            await connection.ExecuteAsync(query, parameteres);
+            MessageBox.Show("Başarıyla silindi");
+
+        }
+
+        private async void btnCategoryUpdate_Click(object sender, EventArgs e)
+        {
+            string query = "Update Categories Set CategoryName = @categoryName, Description=@description Where CategoryId = @categoryId";
+            var parameteres = new DynamicParameters();
+            parameteres.Add("@categoryName", txtCategoryName.Text);
+            parameteres.Add("@description", txtCategoryDescription.Text);
+            parameteres.Add("@categoryId", txtCategoryId.Text);
+            await connection.ExecuteAsync(query, parameteres);
+            MessageBox.Show("Başarıyla güncellendi");
+        }
     }
 }
