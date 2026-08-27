@@ -34,5 +34,5 @@ A comprehensive collection of 8 real-world C# backend projects focusing on Dappe
    `git clone https://github.com/emirhansartik/Advanced-CSharp-Architectures.git`
 2. Ana dizindeki `My8Projects.sln` dosyasını Visual Studio ile açın.
 3. İncelemek istediğiniz projenin klasöründeki SQL scriptlerini (`NorthwindScriptsFolder` vb.) SQL Server üzerinde çalıştırarak veritabanını oluşturun.
-4. `App.config` veya `appsettings.json` içerisindeki `ConnectionString` (Bağlantı Dizesi) alanını kendi SQL Server bilginize göre güncelleyin.
+4. `App.config` veya `appsettings.json` içerisindeki `ConnectionString` (Bağlantı Dizesi) alanını kendi SQL Server bilginize göre güncelleme işlemlerini tamamlayın.
 5. İlgili projeyi "Set as Startup Project" olarak işaretleyip çalıştırın.
