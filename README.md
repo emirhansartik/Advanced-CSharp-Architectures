@@ -18,8 +18,8 @@ A comprehensive collection of 8 real-world C# backend projects focusing on Dappe
 | # | Proje Modülü | Açıklama | Durum |
 | :--- | :--- | :--- | :--- |
 | **1** | **Project1_DapperNorthwind** | Dapper Micro-ORM ile CRUD operasyonları ve saf SQL kullanımı. | ✅ Tamamlandı |
-| **2** | **Web API Hava Durumu** | .NET Web API altyapısının kurulması, Entity Framework ve endpoint tasarımı. | 🟢 Aktif |
-| **3** | **API Consume** | Geliştirilen API mimarisinin dış bir istemci tarafından tüketilmesi. | ⏳ Beklemede |
+| **2** | **Web API Hava Durumu** | .NET Web API altyapısının kurulması, Entity Framework ve endpoint tasarımı. | ✅ Tamamlandı |
+| **3** | **API Consume** | Geliştirilen API mimarisinin dış bir istemci tarafından tüketilmesi. | 🟢 Aktif |
 | **4** | **Rapid API Döviz Kurları** | Dış servis entegrasyonları ve canlı veri çekimi. | ⏳ Beklemede |
 | **5** | **SQL Trigger Projesi** | Veritabanı seviyesinde tetikleyici (Trigger) kuralları ve otomasyon. | ⏳ Beklemede |
 | **6** | **JWT Authentication** | Token bazlı şifreleme ve gelişmiş rol/yetki yönetimi. | ⏳ Beklemede |
