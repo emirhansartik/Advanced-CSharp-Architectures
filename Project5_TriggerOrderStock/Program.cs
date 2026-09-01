@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project5_TriggerOrderStock.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,17 +9,19 @@ namespace Project5_TriggerOrderStock
 {
     internal class Program
     {
+
         static void Main(string[] args)
         {
+            Db5Project8Entities1 context = new Db5Project8Entities1();
+
             string number;
-            Console.WriteLine("### Sipariş Stok Sistemi");
+            Console.WriteLine("### Sipariş Stok Sistemi ###");
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("1-Ürün Listesi");
             Console.WriteLine("2-Sipariş Listesi");
             Console.WriteLine("3-Kasa Durumu");
             Console.WriteLine("4-Yeni Ürün Satışı");
-            Console.WriteLine("5-Ürün Stok Güncelleme");
             Console.WriteLine();
             Console.WriteLine("---------------------------------");
             Console.WriteLine();
@@ -28,11 +31,94 @@ namespace Project5_TriggerOrderStock
             Console.Write("Lütfen Yapmak İstediğiniz İşlemi Seçin: ");
             number = Console.ReadLine();
 
+            Console.WriteLine();
+
             if (number == "1") 
             {
-                
+                Console.WriteLine("---- Ürün Listesi ----");
+                var values = context.TblProduct.ToList();
+                foreach (var item in values)
+                {
+                    Console.WriteLine(item.ProductId + "-" + item.ProductName + " Stok Sayısı: " + item.ProductStock + " Fiyatı:" + item.ProductPrice + " $");                
+                }
             }
 
+            if (number == "2") 
+            {
+                Console.WriteLine("---- Sipariş Listesi ----");
+                var values = context.TblOrder.ToList();
+                foreach (var item in values)
+                {
+                    Console.WriteLine(item.OrderId + "-" + item.TblProduct.ProductName + " Birim Fiyatı: " + item.UnitPrice + "; Adet: " + item.Quantity + "; " + "Toplam Fiyat: " + item.TotalPrice + ";");
+                }
+            } 
+
+            if (number == "3")
+            {
+                Console.WriteLine("---- Kasa Durumu ----");
+                var values = context.TblCashRegister.Select(x=>x.Balance).FirstOrDefault();
+                Console.Write("Kasadaki Toplam Tutar: " + values + " TL");
+                
+            }
+            if (number == "4")
+            {
+                Console.WriteLine("---- Yeni Ürün Sipariş Girişi ----");
+
+                Console.Write("Müşteri Adı: ");
+                string customer = Console.ReadLine();
+
+                Console.Write("Ürün Id: ");
+                int productId = int.Parse(Console.ReadLine());
+
+                Console.Write("Ürün Adedi: ");
+                int quantity = int.Parse(Console.ReadLine());
+
+                Console.WriteLine();
+
+                Console.WriteLine("---- Ürün Bilgileri ----");
+                Console.WriteLine();
+
+                var productName = context.TblProduct.Where(x=>x.ProductId == productId).Select(y=>y.ProductName).FirstOrDefault();
+                Console.WriteLine("Ürün Adı: " + productName);
+
+
+                var productUnitPrice = context.TblProduct.Where(x=> x.ProductId == productId).Select(y=>y.ProductPrice).FirstOrDefault();
+                Console.WriteLine("Birim Fiyat: " + productUnitPrice);
+
+                decimal totalPrice = quantity * decimal.Parse( productUnitPrice.ToString());
+                Console.WriteLine("Toplam Fiyat: " + totalPrice);
+
+                Console.WriteLine();
+                Console.WriteLine("---- Ürün Bilgileri ----");
+
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            Console.Read();
         }
     }
 }
