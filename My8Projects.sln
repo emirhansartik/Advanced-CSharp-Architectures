@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project3_ApiWeatherConsume"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project4_RapidApiCurrency", "Project4_RapidApiCurrency\Project4_RapidApiCurrency.csproj", "{3D289383-BCDF-48A8-91B0-DECA7643B4F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project5_TriggerOrderStock", "Project5_TriggerOrderStock\Project5_TriggerOrderStock.csproj", "{9AC00893-440D-4FDC-AD77-277A72DE6888}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{3D289383-BCDF-48A8-91B0-DECA7643B4F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D289383-BCDF-48A8-91B0-DECA7643B4F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D289383-BCDF-48A8-91B0-DECA7643B4F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AC00893-440D-4FDC-AD77-277A72DE6888}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AC00893-440D-4FDC-AD77-277A72DE6888}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AC00893-440D-4FDC-AD77-277A72DE6888}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AC00893-440D-4FDC-AD77-277A72DE6888}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
