@@ -22,6 +22,8 @@ namespace Project5_TriggerOrderStock
             Console.WriteLine("2-Sipariş Listesi");
             Console.WriteLine("3-Kasa Durumu");
             Console.WriteLine("4-Yeni Ürün Satışı");
+            Console.WriteLine("5-İşlem Sayacı");
+            Console.WriteLine("6-Ürün Stok Sayısı");
             Console.WriteLine();
             Console.WriteLine("---------------------------------");
             Console.WriteLine();
@@ -60,6 +62,7 @@ namespace Project5_TriggerOrderStock
                 Console.Write("Kasadaki Toplam Tutar: " + values + " TL");
                 
             }
+
             if (number == "4")
             {
                 Console.WriteLine("---- Yeni Ürün Sipariş Girişi ----");
@@ -91,28 +94,23 @@ namespace Project5_TriggerOrderStock
                 Console.WriteLine();
                 Console.WriteLine("---- Ürün Bilgileri ----");
 
+                TblOrder tblOrder = new TblOrder();
+                tblOrder.UnitPrice = productUnitPrice;
+                tblOrder.ProductId = productId;
+                tblOrder.Quantity = quantity;
+                tblOrder.TotalPrice = totalPrice;
+                tblOrder.Customer = customer;
 
+                context.TblOrder.Add(tblOrder);
+                context.SaveChanges();
             }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            if (number == "5") 
+            { 
+                var value = context.TblProcess.Select(x=>x.Process).FirstOrDefault();
+                Console.WriteLine("Toplam İşlem Sayısı: " + value);
+            }
 
 
 
@@ -122,3 +120,4 @@ namespace Project5_TriggerOrderStock
         }
     }
 }
+

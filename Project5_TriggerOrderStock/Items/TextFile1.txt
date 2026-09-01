@@ -1,0 +1,32 @@
+﻿--Create Trigger IncreaseProcessCount
+--On TblOrder
+--After Insert
+--As
+--Update TblProcess Set Process +=1
+
+--Create Trigger DecreaseProcessCount
+--On TblOrder
+--After Delete
+--As
+--Update TblProcess Set Process -=1
+
+--Select * from TblProcess
+
+--Create Trigger DecraseProductStockCount
+--On TblOrder
+--After Insert
+--As
+--Declare @productQuantity int
+--Declare @productId int
+--Select @productQuantity = Quantity, @productId = ProductId from inserted
+--Update TblProduct Set ProductStock-=@productQuantity Where ProductId=@productId
+
+--Select Sum(TotalPrice) From TblOrder
+
+--Create Trigger AddTotalPriceToCashRegisterBalance
+--On TblOrder
+--After Insert
+--As
+--Declare @totalPrice decimal(18,2)
+--Select @totalPrice = TotalPrice from inserted
+--Update TblCashRegister Set Balance +=@totalPrice
