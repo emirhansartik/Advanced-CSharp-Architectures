@@ -30,14 +30,14 @@
         {
             this.lblDollar = new System.Windows.Forms.Label();
             this.lblEuro = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtUnitPrice = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.rdbDollar = new System.Windows.Forms.RadioButton();
+            this.rdbEuro = new System.Windows.Forms.RadioButton();
+            this.rdbPound = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtTotalPrice = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -64,13 +64,13 @@
             this.lblEuro.TabIndex = 2;
             this.lblEuro.Text = "0.0000";
             // 
-            // textBox1
+            // txtUnitPrice
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(168, 250);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(301, 29);
-            this.textBox1.TabIndex = 4;
+            this.txtUnitPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtUnitPrice.Location = new System.Drawing.Point(168, 250);
+            this.txtUnitPrice.Name = "txtUnitPrice";
+            this.txtUnitPrice.Size = new System.Drawing.Size(301, 29);
+            this.txtUnitPrice.TabIndex = 4;
             // 
             // label2
             // 
@@ -82,41 +82,41 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Birim Tutar:";
             // 
-            // radioButton1
+            // rdbDollar
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton1.Location = new System.Drawing.Point(170, 204);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(72, 28);
-            this.radioButton1.TabIndex = 6;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Dolar";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdbDollar.AutoSize = true;
+            this.rdbDollar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.rdbDollar.Location = new System.Drawing.Point(170, 204);
+            this.rdbDollar.Name = "rdbDollar";
+            this.rdbDollar.Size = new System.Drawing.Size(72, 28);
+            this.rdbDollar.TabIndex = 6;
+            this.rdbDollar.TabStop = true;
+            this.rdbDollar.Text = "Dolar";
+            this.rdbDollar.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rdbEuro
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton2.Location = new System.Drawing.Point(268, 204);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(69, 28);
-            this.radioButton2.TabIndex = 7;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Euro";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdbEuro.AutoSize = true;
+            this.rdbEuro.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.rdbEuro.Location = new System.Drawing.Point(268, 204);
+            this.rdbEuro.Name = "rdbEuro";
+            this.rdbEuro.Size = new System.Drawing.Size(69, 28);
+            this.rdbEuro.TabIndex = 7;
+            this.rdbEuro.TabStop = true;
+            this.rdbEuro.Text = "Euro";
+            this.rdbEuro.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // rdbPound
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton3.Location = new System.Drawing.Point(365, 204);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(80, 28);
-            this.radioButton3.TabIndex = 8;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Sterlin";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rdbPound.AutoSize = true;
+            this.rdbPound.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.rdbPound.Location = new System.Drawing.Point(365, 204);
+            this.rdbPound.Name = "rdbPound";
+            this.rdbPound.Size = new System.Drawing.Size(80, 28);
+            this.rdbPound.TabIndex = 8;
+            this.rdbPound.TabStop = true;
+            this.rdbPound.Text = "Sterlin";
+            this.rdbPound.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -127,6 +127,7 @@
             this.button1.TabIndex = 9;
             this.button1.Text = "İşlemi Yap";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -138,13 +139,13 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Ödenecek Tutar:";
             // 
-            // textBox2
+            // txtTotalPrice
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox2.Location = new System.Drawing.Point(168, 294);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(301, 29);
-            this.textBox2.TabIndex = 10;
+            this.txtTotalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtTotalPrice.Location = new System.Drawing.Point(168, 294);
+            this.txtTotalPrice.Name = "txtTotalPrice";
+            this.txtTotalPrice.Size = new System.Drawing.Size(301, 29);
+            this.txtTotalPrice.TabIndex = 10;
             // 
             // label3
             // 
@@ -196,13 +197,13 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtTotalPrice);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.rdbPound);
+            this.Controls.Add(this.rdbEuro);
+            this.Controls.Add(this.rdbDollar);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtUnitPrice);
             this.Controls.Add(this.lblEuro);
             this.Controls.Add(this.lblDollar);
             this.Name = "Form1";
@@ -217,14 +218,14 @@
 
         private System.Windows.Forms.Label lblDollar;
         private System.Windows.Forms.Label lblEuro;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtUnitPrice;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton rdbDollar;
+        private System.Windows.Forms.RadioButton rdbEuro;
+        private System.Windows.Forms.RadioButton rdbPound;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtTotalPrice;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
