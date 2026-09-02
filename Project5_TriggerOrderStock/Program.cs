@@ -65,6 +65,7 @@ namespace Project5_TriggerOrderStock
 
             if (number == "4")
             {
+                // Ürün Sipariş Kısmı 
                 Console.WriteLine("---- Yeni Ürün Sipariş Girişi ----");
 
                 Console.Write("Müşteri Adı: ");
