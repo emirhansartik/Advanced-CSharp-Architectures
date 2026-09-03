@@ -16,5 +16,10 @@ namespace Project6_JwtToken
         {
             InitializeComponent();
         }
+
+        private void btnCreateToken_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
