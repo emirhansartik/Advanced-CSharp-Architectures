@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,12 @@ namespace Project6_JwtToken
         public FrmEmployee()
         {
             InitializeComponent();
+        }
+
+        SqlConnection connection = new SqlConnection("");
+        private void FrmEmployee_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
