@@ -31,8 +31,9 @@ namespace Project6_JwtToken
             if (sqlDataReader.Read())
             {
                 string token = tokenGenerator.GenerateJwtToken2(txtUsername.Text);
-                MessageBox.Show(token);
+            //    MessageBox.Show(token);
                 FrmEmployee frm = new FrmEmployee();
+                frm.tokenGet = token;
                 frm.Show();
 
             }
