@@ -18,10 +18,16 @@ namespace Project6_JwtToken
             InitializeComponent();
         }//
 
-        SqlConnection connection = new SqlConnection("");
+        SqlConnection sqlConnection = new SqlConnection("Server=EMIRHAN\\SQLEXPRESS;initial catalog=Db6Project8;integrated security=true");
         private void FrmEmployee_Load(object sender, EventArgs e)
         {
-
+            sqlConnection.Open();
+            SqlCommand command = new SqlCommand("Select * From  TblEmployee", sqlConnection);
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            DataTable dataTable = new DataTable();
+            adapter.Fill(dataTable);
+            dataGridView1.DataSource = dataTable;
+            sqlConnection.Close();
         }
     }
 }
