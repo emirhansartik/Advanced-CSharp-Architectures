@@ -133,7 +133,7 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.richTextBox1.BackColor = System.Drawing.SystemColors.InfoText;
             this.richTextBox1.ForeColor = System.Drawing.Color.White;
             this.richTextBox1.Location = new System.Drawing.Point(27, 295);
             this.richTextBox1.Name = "richTextBox1";
