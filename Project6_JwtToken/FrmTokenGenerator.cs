@@ -22,8 +22,10 @@ namespace Project6_JwtToken
         {
             string username = txtUsername.Text;
             string email = txtEmail.Text;
+            string name = txtName.Text;
+            string surname = txtSurname.Text;   
             TokenGenerator tokenGenerator = new TokenGenerator();
-            string token = tokenGenerator.GenerateJwtToken(username, email);
+            string token = tokenGenerator.GenerateJwtToken(username, email, name, surname);
             richTextBox1.Text = token;
         }
     }
