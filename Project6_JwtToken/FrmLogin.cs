@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project6_JwtToken.JWT;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,9 @@ namespace Project6_JwtToken
         }
         SqlConnection sqlConnection = new SqlConnection("Server=EMIRHAN\\SQLEXPRESS;initial catalog=Db6Project8;integrated security=true");
         private void btnLogin_Click(object sender, EventArgs e)
-        {
+        { 
+            TokenGenerator tokenGenerator = new TokenGenerator();
+
             sqlConnection.Open();
             SqlCommand command = new SqlCommand("Select * From TblUser Where Username=@username and Password=@password", sqlConnection);
             command.Parameters.AddWithValue("@username", txtUsername.Text);
@@ -27,6 +30,8 @@ namespace Project6_JwtToken
             SqlDataReader sqlDataReader = command.ExecuteReader();
             if (sqlDataReader.Read())
             {
+                string token = tokenGenerator.GenerateJwtToken2(txtUsername.Text);
+                MessageBox.Show(token);
                 FrmEmployee frm = new FrmEmployee();
                 frm.Show();
 
