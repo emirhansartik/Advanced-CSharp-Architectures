@@ -22,8 +22,8 @@ A comprehensive collection of 8 real-world C# backend projects focusing on Dappe
 | **3** | **API Consume** | Geliştirilen API mimarisinin dış bir istemci tarafından tüketilmesi. | ✅ Tamamlandı |
 | **4** | **Rapid API Döviz Kurları** | Dış servis entegrasyonları ve canlı veri çekimi. | ✅ Tamamlandı |
 | **5** | **SQL Trigger Projesi** | Veritabanı seviyesinde tetikleyici (Trigger) kuralları ve otomasyon. | ✅ Tamamlandı |
-| **6** | **JWT Authentication** | Token bazlı şifreleme ve gelişmiş rol/yetki yönetimi. | 🟢 Aktif |
-| **7** | **Mail & Aktivasyon** | Kullanıcı işlemleri için SMTP ile e-posta onay süreçleri. | ⏳ Beklemede |
+| **6** | **JWT Authentication** | Token bazlı şifreleme ve gelişmiş rol/yetki yönetimi. | ✅ Tamamlandı |
+| **7** | **Mail & Aktivasyon** | Kullanıcı işlemleri için SMTP ile e-posta onay süreçleri. | 🟢 Aktif |
 | **8** | **Real-Time Masa Durumu** | Dinamik ve anlık veri akışı (Real-time) sağlayan restoran modülü. | ⏳ Beklemede |
 
 ---
