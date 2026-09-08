@@ -40,6 +40,7 @@
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtEmail.Location = new System.Drawing.Point(258, 119);
             this.txtEmail.Name = "txtEmail";
+            this.txtEmail.ReadOnly = true;
             this.txtEmail.Size = new System.Drawing.Size(290, 29);
             this.txtEmail.TabIndex = 3;
             // 
@@ -81,6 +82,7 @@
             this.btnConfirm.TabIndex = 6;
             this.btnConfirm.Text = "Aktivasyonu Tamamla";
             this.btnConfirm.UseVisualStyleBackColor = false;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // FrmMailConfirm
             // 
@@ -94,6 +96,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmMailConfirm";
             this.Text = "Mail Aktivasyon Formu";
+            this.Load += new System.EventHandler(this.FrmMailConfirm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
