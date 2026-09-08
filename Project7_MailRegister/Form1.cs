@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MailKit.Net.Smtp;
+using MimeKit;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,5 +18,53 @@ namespace Project7_MailRegister
         {
             InitializeComponent();
         }
+
+        Db7Project8Entities context = new Db7Project8Entities();
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            Random random = new Random();
+            int confirmCode = random.Next(100000, 1000000);
+
+            TblUser user = new TblUser();
+
+            user.Email = txtEmail.Text;
+            user.Name = txtName.Text;
+            user.Password = txtPassword.Text;
+            user.Surname = txtSurname.Text;
+            user.IsConfirm = false;
+            user.ConfirmCode = confirmCode.ToString();
+
+            context.TblUser.Add(user);
+            context.SaveChanges();
+
+            #region Mail Kodları 
+            MimeMessage mimeMessage = new MimeMessage();
+
+            MailboxAddress mailboxAddressFrom = new MailboxAddress("AdminRegister", "emirhanyilmaz3959@gmail.com");
+            mimeMessage.From.Add(mailboxAddressFrom);
+
+            MailboxAddress mailboxAddressTo = new MailboxAddress("User", txtEmail.Text);
+            mimeMessage.To.Add(mailboxAddressTo);
+
+            var bodyBuilder = new BodyBuilder();
+            bodyBuilder.TextBody = "Email Adresinizin Konfirmasyon Kodu: " + confirmCode;
+            mimeMessage.Body = bodyBuilder.ToMessageBody();
+
+            mimeMessage.Subject = "Email Konfirmasyon Kodu";
+
+            SmtpClient smtpClient = new SmtpClient();
+            smtpClient.Connect("smtp.gmail.com", 587, false);
+            smtpClient.Authenticate("emirhanyilmaz3959@gmail.com", "pjcfkvnxwgcmmliv");
+            smtpClient.Send(mimeMessage);
+            smtpClient.Disconnect(true);
+
+            MessageBox.Show("Mail Adresinize Doğrulama Kodu Gönderilmiştir");
+
+            FrmMailConfirm frm = new FrmMailConfirm();
+            frm.Show();
+            #endregion
+
+
+        }
     }
-}
+}    
