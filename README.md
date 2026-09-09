@@ -25,8 +25,8 @@ A comprehensive collection of 10 real-world C# backend projects focusing on Dapp
 | **5** | **SQL Trigger Projesi** | Veritabanı seviyesinde tetikleyici (Trigger) kuralları ve otomasyon. | ✅ Tamamlandı |
 | **6** | **JWT Authentication** | Token bazlı şifreleme ve gelişmiş rol/yetki yönetimi. | ✅ Tamamlandı |
 | **7** | **Mail & Aktivasyon** | Kullanıcı işlemleri için SMTP ile e-posta onay süreçleri. | ✅ Tamamlandı |
-| **8** | **Kaggle Dataset Analizi** | Kaggle üzerinden (Netflix, Pizza, SuperStore) devasa veri setlerinin projeye entegrasyonu. | 🟢 Aktif |
-| **9** | **SuperStore Dashboard** | Kurumsal seviyede dinamik veri analizi ve istatistiksel raporlama (Yönetim Paneli). | ⏳ Beklemede |
+| **8** | **Kaggle Dataset Analizi** | Kaggle üzerinden (Netflix, Pizza, SuperStore) devasa veri setlerinin projeye entegrasyonu. | ✅ Tamamlandı |
+| **9** | **SuperStore Dashboard** | Kurumsal seviyede dinamik veri analizi ve istatistiksel raporlama (Yönetim Paneli). | 🟢 Aktif |
 | **10** | **Real-Time Masa Durumu** | Dinamik ve anlık veri akışı (Real-time) sağlayan restoran modülü. | ⏳ Beklemede |
 
 ---
