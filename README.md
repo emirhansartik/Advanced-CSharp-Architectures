@@ -1,16 +1,17 @@
-# Advanced C# Architectures
+# 🏗️ Advanced C# Architectures
 
-A comprehensive collection of 10 real-world C# backend projects focusing on Dapper, Web API, JWT authentication, data analysis (Kaggle), and real-time integrations.
+A comprehensive portfolio collection of 10 real-world C# backend projects. This repository demonstrates enterprise-level development practices focusing on Dapper, Web API, JWT authentication, Kaggle data analysis, and real-time integrations.
 
-## 🚀 Teknolojiler
+## 🚀 Teknolojiler ve Araçlar
 
 * **Programlama Dili:** C#
 * **Framework:** .NET 
 * **Veritabanı:** MS SQL Server
 * **ORM:** Dapper, Entity Framework Core
-* **Güvenlik:** JWT (Json Web Token)
+* **Güvenlik:** JWT (JSON Web Token)
 * **Veri Bilimi & Analiz:** Kaggle Datasets
-* **Mimari:** Katmanlı Mimari, DTO (Data Transfer Object) ve Repository Pattern
+* **Mimari Yaklaşım:** Katmanlı Mimari (N-Tier), DTO (Data Transfer Object) ve Repository Pattern
+* **Entegrasyonlar:** SMTP MailKit, RapidAPI, Dış Servis Tüketimi
 
 ---
 
@@ -25,8 +26,8 @@ A comprehensive collection of 10 real-world C# backend projects focusing on Dapp
 | **5** | **SQL Trigger Projesi** | Veritabanı seviyesinde tetikleyici (Trigger) kuralları ve otomasyon. | ✅ Tamamlandı |
 | **6** | **JWT Authentication** | Token bazlı şifreleme ve gelişmiş rol/yetki yönetimi. | ✅ Tamamlandı |
 | **7** | **Mail & Aktivasyon** | Kullanıcı işlemleri için SMTP ile e-posta onay süreçleri. | ✅ Tamamlandı |
-| **8** | **Kaggle Dataset Analizi** | Kaggle üzerinden (Netflix, Pizza, SuperStore) devasa veri setlerinin projeye entegrasyonu. | 🟢 Aktif |
-| **9** | **SuperStore Dashboard** | Kurumsal seviyede dinamik veri analizi ve istatistiksel raporlama (Yönetim Paneli). | ⏳ Beklemede |
+| **8** | **Kaggle Dataset Analizi** | Kaggle üzerinden (Netflix, Pizza, SuperStore) devasa veri setlerinin projeye entegrasyonu. | ✅ Tamamlandı |
+| **9** | **SuperStore Dashboard** | Kurumsal seviyede dinamik veri analizi ve istatistiksel raporlama (Yönetim Paneli). | 🟢 Aktif |
 | **10** | **Real-Time Masa Durumu** | Dinamik ve anlık veri akışı (Real-time) sağlayan restoran modülü. | ⏳ Beklemede |
 
 ---
@@ -35,7 +36,13 @@ A comprehensive collection of 10 real-world C# backend projects focusing on Dapp
 
 1. Projeyi bilgisayarınıza klonlayın:
    `git clone https://github.com/emirhansartik/Advanced-CSharp-Architectures.git`
-2. Ana dizindeki `My8Projects.sln` dosyasını Visual Studio ile açın. *(Not: Proje kapsamı genişleyerek 10 modüle ulaşmıştır ancak root dizin adı korunmuştur.)*
+2. Ana dizindeki `My8Projects.sln` dosyasını Visual Studio ile açın. *(Not: Proje kapsamı vizyon olarak genişleyerek 10 modüle ulaşmıştır ancak kök dizin adı korunmuştur.)*
 3. İncelemek istediğiniz projenin klasöründeki SQL scriptlerini (`NorthwindScriptsFolder` vb.) SQL Server üzerinde çalıştırarak veritabanını oluşturun.
-4. `App.config` veya `appsettings.json` içerisindeki `ConnectionString` (Bağlantı Dizesi) alanını kendi SQL Server bilginize göre güncelleyerek veritabanı bağlantılarını tamamlayın.
+4. `App.config` veya `appsettings.json` içerisindeki `ConnectionString` (Bağlantı Dizesi) alanını kendi yerel SQL Server bilginize göre güncelleyin.
 5. İlgili projeyi Visual Studio üzerinden "Set as Startup Project" olarak işaretleyip çalıştırın.
+
+---
+## 👨‍💻 Geliştirici
+**Emirhan Sartık**
+* Backend Developer & Web Architect
+* [GitHub Profilim](https://github.com/emirhansartik)
