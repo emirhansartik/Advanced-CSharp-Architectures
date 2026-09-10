@@ -63,7 +63,7 @@
             // 
             this.btnRegister.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnRegister.Location = new System.Drawing.Point(287, 337);
+            this.btnRegister.Location = new System.Drawing.Point(324, 331);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(241, 56);
             this.btnRegister.TabIndex = 2;
