@@ -11,6 +11,7 @@ namespace Project6_JwtToken.JWT
 {
     public class TokenValidator
     {
+        // Token Oluşturma Kısmı Ve Davamı
         public ClaimsPrincipal ValidateJwtToken(string token)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
