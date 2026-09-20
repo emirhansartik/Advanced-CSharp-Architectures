@@ -77,7 +77,7 @@ namespace Project7_MailRegister
             /* 
              * 4. ADIM: SMTP BAĞLANTISI VE YÖNLENDİRME
              * Gmail'in SMTP sunucusuna bağlanıp kimlik doğrulaması yapıyor ve maili gönderiyoruz. 
-             * İşlem başarılı olduğunda kullanıcıyı doğrulama formuna (FrmMailConfirm) aktarıyoruz.
+             * İşlem başarılı olduğunda kullanıcıyı doğrulama formuna (FrmMailConfirm) aktarıyoruz.xx
              */
             SmtpClient smtpClient = new SmtpClient();
             smtpClient.Connect("smtp.gmail.com", 587, false);

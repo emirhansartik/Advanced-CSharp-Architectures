@@ -21,7 +21,7 @@ namespace Project7_MailRegister
         public string email;
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-           
+            //xx((//
             var value = context.TblUser.Where(x=>x.Email==txtEmail.Text).Select(y=>y.ConfirmCode).FirstOrDefault();
 
             if (txtConfirmCode.Text == value.ToString())
